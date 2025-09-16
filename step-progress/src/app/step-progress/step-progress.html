@@ -1,0 +1,35 @@
+<div class="container py-4">
+    <!-- Progress bar -->
+    <div class="progress mb-4" role="progressbar" aria-label="Progress bar"
+         [attr.aria-valuenow]="progressValue" aria-valuemin="0" aria-valuemax="100"
+         style="height: 20px">
+      <div class="progress-bar" [style.width.%]="progressValue"></div>
+    </div>
+  
+    <!-- Dropdown -->
+    <div class="d-flex flex-column justify-content-center align-items-center vh-50">
+      <select class="form-select w-50" [(ngModel)]="selectedValue" (change)="onSelectChange()">
+        <option *ngFor="let item of options" [value]="item.value">
+          {{ item.label }}
+        </option>
+      </select>
+    </div>
+  
+    <!-- Sections -->
+    <div *ngIf="selectedValue === '1'" class="d-flex flex-column justify-content-center align-items-center vh-100">
+      <h3>Section 1</h3>
+    </div>
+  
+    <div *ngIf="selectedValue === '2'" class="d-flex flex-column justify-content-center align-items-center vh-100">
+      <h3>Section 2</h3>
+    </div>
+  
+    <div *ngIf="selectedValue === '3'" class="d-flex flex-column justify-content-center align-items-center vh-100">
+      <h3>Section 3</h3>
+    </div>
+  
+    <div *ngIf="selectedValue === '4'" class="d-flex flex-column justify-content-center align-items-center vh-100">
+      <h3>Section 4</h3>
+    </div>
+  </div>
+  
