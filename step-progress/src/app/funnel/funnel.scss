@@ -1,0 +1,49 @@
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 70px 70px 0 70px;
+    border-color: #FF4532 transparent transparent transparent;
+    transform: rotate(0deg);
+ }
+ .trapezoid,  .trapezoid1, .trapezoid2, .trapezoid3, .trapezoid4, .trapezoid5 { 
+	border-bottom: 56px solid #FF4532;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 202px;
+    margin-bottom: 10px;
+    transform: rotate(-180deg);
+}
+.trapezoid1 {
+    border-bottom: 56px solid #FF4532;
+    width: 250px;
+}
+.trapezoid2 {
+    border-bottom: 56px solid #FF8A66;
+    width: 265px;
+}
+.trapezoid3{
+    border-bottom: 56px solid #FFB199;
+    width: 280px;
+}
+.trapezoid4{
+    border-bottom: 56px solid #FFB199;
+    width: 280px;
+}
+.trapezoid5{
+    border-bottom: 56px solid #FFB199;
+    width: 280px;
+} 
+
+.seperate {
+    p {
+        width: 20%!important;
+        white-space: nowrap;
+    }
+        .right {
+            width: 80%!important;
+            display: flex;
+            justify-content: center;
+        }
+}

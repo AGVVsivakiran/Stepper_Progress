@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 import { CommonModule } from '@angular/common';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-step-progress',
   imports: [FormsModule,CommonModule,],
@@ -18,6 +18,8 @@ export class StepProgress {
 
   selectedValue = '1';   // default selection
   progressValue = 0;     // default progress bar width
+
+  constructor (private route:Router){}
 
   onSelectChange() {
     switch (this.selectedValue) {
@@ -36,5 +38,14 @@ export class StepProgress {
       default:
         this.progressValue = 0;
     }
+  }
+
+
+  switch(){
+    this.route.navigate(['switch']);
+  }
+
+  funnel(){
+    this.route.navigate (['funnel']);
   }
 }
