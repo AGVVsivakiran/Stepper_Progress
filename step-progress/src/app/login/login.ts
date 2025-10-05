@@ -23,7 +23,7 @@ export class Login {
   submit (): void{
     if(this.cred.email === this.email && this.cred.password === this.password){
       alert("Login Successful");
-      this.router.navigate(['/step-progress']);
+      this.router.navigate(['/table']);
     }else{
       alert("Login Failed");
     }
