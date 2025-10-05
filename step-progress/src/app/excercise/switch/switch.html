@@ -1,12 +1,20 @@
 <button class="btn btn-primary p-2" (click)="back()">Back</button>
 <div class="row">
     
-    <div class="col-2">
-        <ul>
-            <li>Select1</li>
-            <li>Select2</li>
+    <div class="col-12">
+        <ul class="nav gap-5">
+            <li (click)="select('1')">Select1</li>
+            <li (click)="select('2')">Select2</li>
+            <li (click)="select('3')">Select3</li>
+            <li (click)="select('4')">Select4</li>
+            <li (click)="select('5')">Select5</li>
         </ul>
     </div>
-    <div class="col-4 box1"></div>
-    <div class="col-4 box2"></div>
+    <div *ngIf="selected === '1'" class="col-4 box1"></div>
+    <div *ngIf="selected === '2'"  class="col-4 box2"></div>
+    <div *ngIf="selected === '3'"  class="col-4 box3 bg-warning"></div>
+    <div *ngIf="selected === '4'"  class="col-4 box4 bg-dark"></div>
+    <div  *ngIf="selected === '5'" class="col-4 box5 bg-secondary"></div>
 </div>
+
+ 
