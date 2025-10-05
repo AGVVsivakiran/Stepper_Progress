@@ -5,7 +5,7 @@
 
 
     .fl-table {
-        display: block;
+        display: flex;
         width: 100%;
     }
     .table-wrapper:before{
@@ -17,7 +17,7 @@
         padding: 0 0 10px;
     }
     .fl-table thead, .fl-table tbody, .fl-table thead th {
-        display: block;
+        display: flex;
     }
     .fl-table thead th:last-child{
         border-bottom: none;
@@ -62,6 +62,6 @@
         border-right: 1px solid #E6E4E4;
     }
     .fl-table tbody td {
-        display: block;
+        display: flex;
         text-align: center;
     }
