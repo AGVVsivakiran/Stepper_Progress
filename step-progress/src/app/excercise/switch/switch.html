@@ -7,7 +7,7 @@
             <li (click)="select('2')">Select2</li>
             <li (click)="select('3')">Select3</li>
             <li (click)="select('4')">Select4</li>
-            <li (click)="select('5')">Select5</li>
+            <li on-click="select('5')">Select5</li>
         </ul>
     </div>
     <div *ngIf="selected === '1'" class="col-4 box1"></div>
