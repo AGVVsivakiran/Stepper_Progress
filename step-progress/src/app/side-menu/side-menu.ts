@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',
@@ -8,5 +8,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './side-menu.scss'
 })
 export class SideMenu {
-
+constructor(private router: Router) {}
+  logout(){
+    this.router.navigate(['/login']);
+  }
 }
