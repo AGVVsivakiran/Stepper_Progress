@@ -33,18 +33,21 @@
             <button class="btn btn-outline-primary" (click)="fdscr()">Next<i class="bi bi-caret-right"></i></button>
         </div>
     </div>
-<hr>
-    <h6 class="mt-3">Limited select</h6>
-    <small>Note: screen start at 1 and stop at 5 with change button from next to submit</small>
-    <div class="col-12 d-flex flex-column justify-content-center mt-3">        
-        <span class="rectangle" *ngIf="limitedscreen === 1">1</span>
-        <span class="rectangle" *ngIf="limitedscreen === 2">2</span>
-        <span class="rectangle" *ngIf="limitedscreen === 3">3</span>
-        <span class="rectangle" *ngIf="limitedscreen === 4">4</span>
-        <span class="rectangle" *ngIf="limitedscreen === 5">5</span>
+<hr>    
+    <div class="col-12 mt-3">
+        <h6>Limited select</h6>
+        <small>Note: screen start at 1 and stop at 5 with change button from next to submit</small>
+        <div class="col-12 d-flex flex-column justify-content-center mt-3">
+            <span class="rectangle" *ngIf="limitedscreen === 1">1</span>
+            <span class="rectangle" *ngIf="limitedscreen === 2">2</span>
+            <span class="rectangle" *ngIf="limitedscreen === 3">3</span>
+            <span class="rectangle" *ngIf="limitedscreen === 4">4</span>
+            <span class="rectangle" *ngIf="limitedscreen === 5">5</span>
+        </div>
         <div class="d-flex justify-content-between align-items-center mt-2 border p-2 rounded-4">
-            <button class="btn btn-primary" on-click="backlim()"><i class="bi bi-caret-left"></i>Previous</button>
-            <button class="btn btn-outline-primary" on-click="fdrlim()">Next<i class="bi bi-caret-right"></i></button>
+            <button class="btn btn-primary" on-click="backlim()" [disabled]="limitedscreen === 1"><i class="bi bi-caret-left"></i>Previous</button>
+            <button class="btn btn-outline-primary" on-click="fdrlim()" *ngIf ="limitedscreen < 5">Next<i class="bi bi-caret-right"></i></button>
+            <button class="btn btn-outline-primary" on-click="limitsubmit()" *ngIf ="limitedscreen === 5"><i class="bi bi-telegram">Submit</i></button>
         </div>
     </div>
 </div>

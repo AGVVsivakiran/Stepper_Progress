@@ -41,6 +41,10 @@ console.log(this.screen);
   fdrlim(){
     if(this.limitedscreen < 5){
       this.limitedscreen++;
-    }
+    }    
+  }
+
+  limitsubmit(){
+    alert("Form Submitted Successfully");
   }
 }
