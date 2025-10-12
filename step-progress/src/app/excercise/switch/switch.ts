@@ -18,4 +18,6 @@ constructor(private route:Router){}
     this.selected = box;
     console.log(this.selected = box);
   }
+
+  salary: number = 2000;
 }

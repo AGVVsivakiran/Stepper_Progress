@@ -4,6 +4,7 @@ import { Switch } from './excercise/switch/switch';
 import { Funnel } from './funnel/funnel';
 import { Login } from './login/login';
 import { Table } from './table/table'; 
+import { Meter } from './meter/meter';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'step-progress', component: StepProgress},
     {path: 'switch', component: Switch},
     {path: 'funnel', component: Funnel}, 
+    {path : 'meter', component: Meter}
 
 ];
