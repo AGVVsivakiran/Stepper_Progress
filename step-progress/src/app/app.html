@@ -1,9 +1,9 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2">
+        <div class="col-2" *ngIf="sidemenu">
             <app-side-menu></app-side-menu>
         </div>
-        <div class="col-10">
+        <div [class.col-10]="sidemenu" [class.col.12]="!sidemenu">
             <router-outlet></router-outlet>
         </div>
     </div>
