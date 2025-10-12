@@ -27,3 +27,16 @@
 .border{
     border: 5px solid black;
 }
+
+.rectangle{
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(to right, purple, darkblue, rgb(123, 139, 0), rgb(139, 0, 130), rgb(139, 76, 0));
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #fff;
+}
