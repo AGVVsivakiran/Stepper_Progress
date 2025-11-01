@@ -1,1 +1,8 @@
-<p>interactingpage works!</p>
+<div class="container-fluid">
+    <div class="border border-3 border-primary">
+        <span (click)="toggleSidebar()">
+            <i class="bi bi-list" *ngIf="!appRef.sidemenu"></i>
+            <i class="bi bi-x" *ngIf="appRef.sidemenu"></i>
+          </span>
+    </div>
+</div>

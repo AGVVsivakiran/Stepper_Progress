@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';  
+import { Router } from '@angular/router';   
+import { Interactingpage } from '../../interactingpage/interactingpage';
+
 @Component({
   selector: 'app-switch',
-  imports: [CommonModule],
+  imports: [CommonModule,Interactingpage],
   templateUrl: './switch.html',
   styleUrl: './switch.scss'
 })

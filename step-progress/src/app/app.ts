@@ -23,4 +23,7 @@ export class App {
         this.sidemenu = !(event.url === '/login' || event.url === '/register');
       });
     }
+    toggleMenu() {
+      this.sidemenu = !this.sidemenu;
+    }
 }
