@@ -35,6 +35,8 @@
         </div>
     </div>
 <hr>    
+
+<!-- Limited select -->
     <div class="col-12 mt-3">
         <h6>Limited select</h6>
         <small>Note: screen start at 1 and stop at 5 with change button from next to submit</small>
@@ -52,6 +54,29 @@
         </div>
     </div>
     <hr>        
+
+    <!-- pop-up and close with escape key -->
+
+<div class="col-12">
+    <h6>Pop-Up and close with escape key</h6>
+    <button class="btn btn-primary d-flex mx-auto" (click)="escapebtn()">pop-up</button>
+    <div class="exactcenter" *ngIf="escapeclose"> 
+        <div class="card" style="width: 18rem;">
+            <div class="w-100">
+                <div class="btn btn-close float-end" (click)="escapebtn()"></div>
+            </div>
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">CPop-Up and close with escape key</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                    content.</p>
+                <a  class="btn btn-primary d-block mx-auto"  (click)="escapebtn()">cancel</a> 
+            </div> 
+        </div>
+    </div>
+    </div>
+    <hr>
+    <!-- Pop-Up and box -->
     <div class="col-12 mt-3">
         <h6>Pop-Up and box</h6>
         <div class="d-flex justify-content-center flex-column">
@@ -63,7 +88,7 @@
                     </div>
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Pop-Up and box</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
                             content.</p>
                         <a  class="btn btn-primary me-2"  (click)="popupchanges(1)">box-1</a>
@@ -78,3 +103,5 @@
         </div>
     </div>
 </div>
+<hr>
+

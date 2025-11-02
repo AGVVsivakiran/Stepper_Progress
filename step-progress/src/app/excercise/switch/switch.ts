@@ -19,6 +19,7 @@ constructor(private route:Router){}
   limitedscreen:number = 1; //limited screen
   boxclose = false; //for closing box
   popup:number | null = null; //for popup box
+  escapeclose = false; //for escape key close
 
   //selecting tabs
   select(box: string){
@@ -57,10 +58,22 @@ console.log(this.screen);
     if (boxNumber) {
       // when clicking box-1 or box-2 buttons
       this.popup = boxNumber;
+      console.log('Popup box number:', this.popup);
       this.boxclose = false;  // close popup
     } else {
       // toggle popup open/close when clicking main button or close icon
       this.boxclose = !this.boxclose;
     }
+  }
+
+  //escape btn
+  escapebtn(){
+    this.escapeclose = !this.escapeclose;
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        this.escapeclose = false;
+      }
+    });
+    document.body.style.overflow = 'hidden';
   }
 }
