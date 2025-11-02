@@ -6,6 +6,7 @@ import { Login } from './login/login';
 import { Table } from './table/table'; 
 import { Meter } from './meter/meter';
 import { Interactingpage } from './interactingpage/interactingpage';
+import { Decorator } from './excercise/decorator/decorator';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -15,6 +16,7 @@ export const routes: Routes = [
     {path: 'switch', component: Switch},
     {path: 'funnel', component: Funnel}, 
     {path : 'meter', component: Meter},
-    {path: 'interactingpage', component: Interactingpage}
+    {path: 'interactingpage', component: Interactingpage},
+    {path: 'decorator', component: Decorator}
 
 ];
