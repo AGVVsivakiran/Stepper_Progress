@@ -1,3 +1,12 @@
+.navcss{ 
+    li{
+        padding: 10px; 
+        transition: all 0.3s ease;
+    }
+}
 .high{
-    text-decoration: underline;    
+   background: greenyellow;
+   padding: 10px; 
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
 }
