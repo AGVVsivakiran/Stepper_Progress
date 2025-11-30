@@ -69,9 +69,11 @@ console.log(this.screen);
   //escape btn
   escapebtn(){
     this.escapeclose = !this.escapeclose;
+    console.log('close button', this.escapeclose);
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
         this.escapeclose = false;
+        console.log('escape', event.key);
       }
     });
     document.body.style.overflow = 'hidden';
